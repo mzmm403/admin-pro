@@ -1,0 +1,47 @@
+// 变更部分el变量 配置主题色
+:root {
+    --el-fill-color-blank: var(--dawei-backgroud-color);
+    --el-text-color-primary: var(--dawei-color-dark-black);
+    --el-bg-color: var(--dawei-backgroud-color);
+}
+
+// 修改 el-button--primary 主题色
+.el-button--primary {
+    --el-color-primary: var(--dawei-color-main);
+}
+
+.el-button--primary:hover,
+.el-button--primary:focus {
+    --el-button-hover-border-color: var(--dawei-color-main-light-1);
+    --el-button-hover-bg-color: var(--dawei-color-main-light-1);
+}
+
+.el-button--primary:active {
+    --el-button-active-border-color: var(--dawei-color-main);
+    --el-button-active-bg-color: var(--dawei-color-main);
+}
+
+// 修改 menu--horizontal 激活主题色
+.el-menu.el-menu--horizontal > .el-menu-item.is-active {
+    border-bottom: 2px solid var(--dawei-color-main);
+    color: var(--dawei-color-main) !important;
+}
+
+.el-menu.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    color: var(--dawei-color-main);
+    background-color: var(--dawei-color-main-light-2);
+}
+
+// 修改 el-switch--large 主题色
+.el-switch.is-checked.el-switch--large .el-switch__core {
+    background-color: var(--dawei-color-main);
+    border-color: var(--dawei-color-main);
+}
+
+// 更改 el-input 获取焦点后的主题色
+.el-input {
+    .el-input__wrapper.is-focus {
+        box-shadow: 0 0 0 1px var(--dawei-color-main) inset;
+    }
+}

@@ -20,10 +20,18 @@ const router = createRouter({
     routes,
 })
 
+const noStatusPage = ['/login','/about']
 // 创建路由守卫
 router.beforeEach((_to, _from, next) => {
     NProgress.start()
-    next()
+    // 获取token看是否登录
+    const token = sessionStorage.getItem('userInfo')
+    const userIsLogin = token ? true : false
+    if(userIsLogin || noStatusPage.includes(_to.path)){
+        next()
+    }else{
+        next("/login")
+    }
 })
 
 router.afterEach(() => {
