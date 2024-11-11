@@ -45,6 +45,9 @@ importers:
       '@eslint/js':
         specifier: ^9.13.0
         version: 9.13.0
+      '@iconify-json/ep':
+        specifier: ^1.2.1
+        version: 1.2.1
       '@types/node':
         specifier: ^22.8.1
         version: 22.8.1
@@ -585,6 +588,9 @@ packages:
   '@humanwhocodes/retry@0.3.1':
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==, tarball: https://registry.npmmirror.com/@humanwhocodes/retry/-/retry-0.3.1.tgz}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/ep@1.2.1':
+    resolution: {integrity: sha512-m72jNpdlWI7Wd3TPs3RUd6nPiU1WWnWSvpOkM67HWNsyQrZDlTtLstLF9hAK8nhOxENi6ZO670A16mDvWJD9Cw==, tarball: https://registry.npmmirror.com/@iconify-json/ep/-/ep-1.2.1.tgz}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==, tarball: https://registry.npmmirror.com/@iconify/types/-/types-2.0.0.tgz}
@@ -3228,6 +3234,10 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.1': {}
+
+  '@iconify-json/ep@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/types@2.0.0': {}
 
