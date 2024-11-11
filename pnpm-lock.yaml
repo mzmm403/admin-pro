@@ -111,6 +111,9 @@ importers:
       stylelint-config-prettier:
         specifier: ^9.0.5
         version: 9.0.5(stylelint@16.10.0(typescript@5.6.3))
+      stylelint-config-recommended-less:
+        specifier: ^3.0.1
+        version: 3.0.1(postcss@8.4.47)(stylelint@16.10.0(typescript@5.6.3))
       stylelint-config-recommended-scss:
         specifier: ^14.1.0
         version: 14.1.0(postcss@8.4.47)(stylelint@16.10.0(typescript@5.6.3))
@@ -2414,6 +2417,15 @@ packages:
     hasBin: true
     peerDependencies:
       stylelint: '>= 11.x < 15'
+
+  stylelint-config-recommended-less@3.0.1:
+    resolution: {integrity: sha512-4vp9Z+W0KwxgPL4L3WxXtlMurfen0NXKFFxPHzDYn2s6WVS26Gg7jt3FIO4ZLM1x8WalCR02nwK2h0TH/mafBg==, tarball: https://registry.npmmirror.com/stylelint-config-recommended-less/-/stylelint-config-recommended-less-3.0.1.tgz}
+    peerDependencies:
+      postcss: ^8.3.3
+      stylelint: ^16.0.2
+    peerDependenciesMeta:
+      postcss:
+        optional: true
 
   stylelint-config-recommended-scss@14.1.0:
     resolution: {integrity: sha512-bhaMhh1u5dQqSsf6ri2GVWWQW5iUjBYgcHkh7SgDDn92ijoItC/cfO/W+fpXshgTQWhwFkP1rVcewcv4jaftRg==, tarball: https://registry.npmmirror.com/stylelint-config-recommended-scss/-/stylelint-config-recommended-scss-14.1.0.tgz}
@@ -5090,6 +5102,15 @@ snapshots:
   stylelint-config-prettier@9.0.5(stylelint@16.10.0(typescript@5.6.3)):
     dependencies:
       stylelint: 16.10.0(typescript@5.6.3)
+
+  stylelint-config-recommended-less@3.0.1(postcss@8.4.47)(stylelint@16.10.0(typescript@5.6.3)):
+    dependencies:
+      postcss-less: 6.0.0(postcss@8.4.47)
+      stylelint: 16.10.0(typescript@5.6.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.10.0(typescript@5.6.3))
+      stylelint-less: 3.0.1(postcss@8.4.47)(stylelint@16.10.0(typescript@5.6.3))
+    optionalDependencies:
+      postcss: 8.4.47
 
   stylelint-config-recommended-scss@14.1.0(postcss@8.4.47)(stylelint@16.10.0(typescript@5.6.3)):
     dependencies:
